@@ -1,0 +1,77 @@
+.section-assortment {
+}
+
+.assortment-title {
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #030a06;
+}
+.assortment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.assortment-item {
+}
+
+.assortment-item-img {
+  border-radius: 32px;
+}
+
+.assortment-subtitle {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+}
+
+.assortment-item-text {
+  margin-bottom: 8px;
+  font-size: 14px;
+
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+}
+.assortment-item-price {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+}
+.assortment-btn {
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: 288px;
+  height: 40px;
+  background: #ebf8ed;
+}
+
+.assortment-btn:hover,
+.assortment-btn:focus {
+  background: #030a06;
+  opacity: 0.5;
+  color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.assortment-btn:active {
+  background: #113916;
+  opacity: 0.6;
+}
