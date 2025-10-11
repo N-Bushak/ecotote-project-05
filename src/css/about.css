@@ -1,7 +1,7 @@
 /* Styles for Mobile devices */
 .section-about {
   background-color: #030a06;
-  background-image: url('../img/mob-about-1x.webp');
+  background-image: url('/img/mob-about-1x.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
     .section-about {
-        background-image: url('../img/mob-about-2x.webp');
+        background-image: url('/img/mob-about-2x.webp');
     }
 }
 
