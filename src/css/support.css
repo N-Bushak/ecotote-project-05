@@ -1,0 +1,166 @@
+.support-section {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.support-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.support-paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.support-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.support-label {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.support-input {
+
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 100%;
+    height: 42px;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-input::placeholder {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(3, 10, 6, 0.6);
+}
+
+.support-input:focus {
+    outline: none;
+    color: #030a06;
+}
+
+.support-input:not(:placeholder-shown):invalid{
+    color: #030a06;
+}
+
+.support-input:not(:placeholder-shown):invalid{
+    border: 1px solid #d64040;
+    color: #d64040;
+}
+
+.support-text-invalid {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d64040;
+    display: none;
+    position: absolute;
+}
+
+.support-input:not(:placeholder-shown):invalid~.support-text-invalid {
+    display: block;
+}
+
+
+.support-textarea {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    height: 180px;
+    resize: none;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-textarea::placeholder {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(3, 10, 6, 0.6);
+}
+
+.support-textarea:focus {
+    outline: none;
+    color: #030a06;
+}
+
+
+
+.support-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button-send {
+    background: #030a06;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-send:hover,
+.button-send:focus {
+    background: none;
+    color: #030a06;
+    border: 1px solid #030a06;
+}
+
+
+.support-wrapper {
+    display: flex;
+    gap: 24px;
+   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+.support-title {
+    max-width: 468px;
+}
+.button-send {
+    width: 249px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.support-title {
+    font-size: 48px;
+    max-width: 644px;
+}
+.support-form-wrapper {
+    max-width: 644px;
+}
+.button-send {
+    width: 198px;
+}
+.support-wrapper {
+    flex-wrap: nowrap;
+}
+}

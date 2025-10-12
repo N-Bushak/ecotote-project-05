@@ -1,1 +1,71 @@
-<section>Support</section>
+<section class="support-section" id="support">
+  <div class="container">
+    <div class="support-wrapper">
+        <div class="support-form-wrapper">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="support-paragraph">Ми тут, щоб допомогти!</p>
+    <form class="support-form">
+      <div class="support-field">
+        <label for="user-name" class="support-label">Ім'я</label>
+        <div class="support-name-div">
+          <input
+            type="text"
+            class="support-input"
+            placeholder="Іван"
+            name="user-name"
+            id="user-name"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="support-field">
+        <label for="user-email" class="support-label">Електронна пошта</label>
+        <div class="support-email-div">
+          <input
+            type="email"
+            class="support-input"
+            placeholder="hello@ecotote.com"
+            name="user-email"
+            id="user-email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+            minlength="5" 
+            maxlength="64" 
+            required
+          />
+          <p class="support-text-invalid">Error</p>
+        </div>
+      </div>
+      <div class="support-field">
+        <label for="user-comment" class="support-label">Повідомлення</label>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="support-textarea"
+          placeholder="Введіть своє повідомлення..."
+          maxlength="500" 
+        ></textarea>
+      </div>
+      </form>
+      <button type="submit" class="button-send">Надіслати</button>
+    </form>
+    </div>
+    <div class="support-picture">
+      <picture>
+        <source
+          srcset="../img/des-support-1x.webp 1x, ../img/des-support-2x.webp 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="../img/tab-support-1x.webp 1x, ../img/tab-support-2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="../img/mob-support-1x.webp 1x, ../img/mob-support-2x.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img src="../img/mob-support-1x.webp" alt="support" />
+      </picture>
+    </div>
+  </div>
+</section>
