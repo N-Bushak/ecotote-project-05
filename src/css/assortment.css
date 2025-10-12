@@ -1,10 +1,10 @@
 .section-assortment {
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
 .assortment-title {
   font-family: 'Comfortaa', sans-serif;
-  margin-top: 32px;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 36px;
@@ -75,4 +75,70 @@
   border: 1px solid #113916;
   color: #113916;
   opacity: 0.6;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-assortment {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .assortment-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .assortment-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .assortment-item-img {
+    width: 340px;
+  }
+
+  .assortment-btn {
+    width: 340px;
+  }
+
+  .assortment-btn-margin {
+    margin-top: 22px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .assortment-title {
+    font-size: 48px;
+  }
+
+  .assortment-list {
+    row-gap: 64px;
+  }
+
+  .assortment-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .assortment-btn {
+    width: 310px;
+  }
+
+  .assortment-btn8-margin {
+    margin-top: 22px;
+  }
 }
