@@ -19,7 +19,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin src="/ecotote-project-05/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ecotote-project-05/assets/index-DsOCYtGy.css">
+    <link rel="stylesheet" crossorigin href="/ecotote-project-05/assets/index-Dx8_DPG-.css">
   </head>
   <body>
     <header class="header">Header</header>
@@ -27,21 +27,38 @@
     <main>
       <section class="section-hero">
     <div class="hero container">
-        <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті.</h1>
-        <div class="hero-content">
-            <p class="hero-text">
-                Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та відповідальність разом з EcoTote.
-            </p>
-            <a class="hero-btn" href="#assortment"><span class="btn-text">Купити зараз</span></a>
+        <div class="hero-container-desc">
+            <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті.</h1>
+            <div class="hero-content">
+                <p class="hero-text">
+                    Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та відповідальність разом з EcoTote.
+                </p>
+                <a class="hero-btn" href="#assortment"><span class="btn-text">Купити зараз</span></a>
         </div>
-        <img 
-        class="hero-img" 
-        srcset="/ecotote-project-05/assets/mob-hero-1x-Dfokm_Xt.webp, /ecotote-project-05/assets/mob-hero-2x-fpmaPSYf.webp"
+        </div>
+        
+        <picture>
+            <source 
+            srcset="/ecotote-project-05/assets/mob-hero-1x-Dfokm_Xt.webp 1x, /ecotote-project-05/assets/mob-hero-2x-fpmaPSYf.webp 2x"
+            media="(max-width: 767px)" type="image/webp"
+            />
 
-        src="/ecotote-project-05/assets/mob-hero-1x-Dfokm_Xt.webp" 
-        alt="Сумки-шопери стоять на лавці."
-        width="288"
-        height="285">
+            <source 
+            srcset="/ecotote-project-05/assets/tab-hero-1x-DFX4qZCO.webp 1x, /ecotote-project-05/assets/tab-hero-2x-k0LO0shY.webp 2x"
+            media="(min-width: 768px) and (max-width: 1440px)" type="image/webp"
+            />
+
+            <source 
+            srcset="/ecotote-project-05/assets/des-hero-1x-BQT_ife6.webp 1x, /ecotote-project-05/assets/des-hero-2x-CM2DSkxK.webp 2x"
+            media="(min-width:1440px)" type="image/webp"
+            />
+
+         <img 
+         class="hero-img"
+         src="/ecotote-project-05/assets/des-hero-1x-BQT_ife6.webp" 
+         alt="Сумки-шопери стоять на лавці."> 
+        </picture>
+
     </div>
 </section>
       <section class="section-about">
