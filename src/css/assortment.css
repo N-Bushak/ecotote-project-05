@@ -79,12 +79,6 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .section-assortment {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -116,12 +110,6 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
   .assortment-title {
     font-size: 48px;
   }
