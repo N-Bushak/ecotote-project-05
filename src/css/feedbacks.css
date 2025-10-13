@@ -1,29 +1,21 @@
-/* ____________ CONTAINER ___________- */
-.container {
-  width: 288px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-}
+
 /* __________SECTION-FEEDBACK________ */
-.title-div {
+.feedback-section {
     margin-top: 32px;
     margin-bottom: 32px;
-    width: 288px;
+    
     
 }
-.title-head {
+.feedback-title {
     font-family: "Comfortaa", sans-serif;
    font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 letter-spacing: 0.01em;
 text-align: center;
-color: #030a06;
 margin-bottom: 32px;
-margin-top: 32px;
 }
-.title-list {
+.feedback-list {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
 font-size: 20px;
@@ -36,26 +28,25 @@ color: #030a06;
     justify-content: center;
 }
 
-.list-item {
+.feedback-li {
 font-weight: 700;
 font-size: 20px;
 line-height: 1.4;
 letter-spacing: 0.01em;
-color: #030a06;
 padding-top: 24px;
 padding-bottom: 12px;
 }
-.title-name {
+.feedback-name {
 font-family: "Fira Sans", sans-serif;
 font-weight: 600;
 font-size: 16px;
 line-height: 1.6;
 color: #030a06;
 }
-.rating {
+.feedback-rating-svg {
     fill: #3ac04c;
 }
-.rating-list {
+.feedback-rating-list {
   display: flex;
   gap: 4px; 
   padding: 0;
@@ -64,37 +55,26 @@ color: #030a06;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
-  .title-div {
-    width: 100%;
-    margin-top: 64px;
-    margin-bottom: 64px;
-  }
+ .feedback-section {
+margin-top: 64px;
+margin-bottom: 64px;
+}
 
-  .title-head {
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-
-  .title-list {
+  .feedback-list {
     column-gap: 24px;
     row-gap: 32px; 
   }
 
-  .title-list-item {
+  .feedback-list-item {
     flex-basis: calc((100% - 24px) / 2);
     display: flex;
     flex-direction: column; 
   }
 
-  .list-item {
-    padding-bottom: 24px;
+  .feedback-li {
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 
 }
