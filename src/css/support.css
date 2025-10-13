@@ -56,7 +56,7 @@
     color: #030a06;
 }
 
-.support-input:not(:placeholder-shown):invalid{
+.support-input:not(:placeholder-shown):valid{
     color: #030a06;
 }
 
@@ -104,13 +104,6 @@
 }
 
 
-
-.support-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .button-send {
     background: #030a06;
     font-weight: 400;
@@ -122,17 +115,20 @@
     padding: 12px 24px;
     width: 288px;
     height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, opacity 0.3s ease, border 0.3s ease;
 }
 
 .button-send:hover,
 .button-send:focus {
-    background: none;
-    color: #030a06;
-    border: 1px solid #030a06;
+    background: #030a06;
+    opacity: 0.5;
 }
 
+.button-send:active {
+    background: #113916;
+    border: 1px solid #113916;
+    opacity: 0.6;
+}
 
 .support-wrapper {
     display: flex;
@@ -140,27 +136,85 @@
    flex-wrap: wrap;
 }
 
+.background-image {
+    background-image: url('../img/mob-support-1x.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    height: 428px;
+    width: 100%;
+    background-position: center center;
+}
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/mob-support-2x.webp');
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
+.support-section {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
 .support-title {
     max-width: 468px;
 }
 .button-send {
     width: 249px;
 }
+.background-image {
+    background-image: url('../img/tab-support-1x.webp');
+    width: 704px;
 }
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/tab-support-2x.webp');
+    }
+}
+
+.support-input,
+.support-textarea,
+.support-form,
+.support-form-wrapper {
+    width: 100%;
+}
+
+}
+
 
 @media only screen and (min-width: 1440px) {
 .support-title {
     font-size: 48px;
-    max-width: 644px;
+    width: 100%;
 }
 .support-form-wrapper {
-    max-width: 644px;
+    width: 100%;
 }
 .button-send {
     width: 198px;
 }
 .support-wrapper {
     flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.background-image {
+    background-image: url('../img/des-support-1x.webp');
+    width: 644px;
+    height: 767px;
+    margin-top: 0;
+}
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/des-support-2x.webp');
+    }
+
 }
 }
