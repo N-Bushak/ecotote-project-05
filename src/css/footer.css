@@ -5,6 +5,42 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #030a06;
+  width: 100%;
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+}
+
+.footer-navigation-link:active {
+  color: #3ac04c;
+}
+
+.footer-navigation-link:disabled {
+  color: gray;
+}
+
+.footer-navigation-link:disabled::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid gray;
+  width: 100%;
+  color: gray;
+}
+
+.footer-navigation-link:active::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #3ac04c;
+  width: 100%;
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+}
+
 .container {
   max-width: 320px;
   /* padding: 0 16px; */
