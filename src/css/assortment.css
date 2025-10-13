@@ -1,0 +1,132 @@
+.section-assortment {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.assortment-title {
+  font-family: 'Comfortaa', sans-serif;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.assortment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.assortment-item {
+}
+
+.assortment-item-img {
+  border-radius: 32px;
+}
+
+.assortment-subtitle {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.6;
+  text-align: center;
+}
+
+.assortment-item-text {
+  margin-bottom: 8px;
+  font-size: 14px;
+
+  line-height: 1.6;
+  text-align: center;
+}
+
+.assortment-item-price {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.6;
+  text-align: center;
+}
+
+.assortment-btn {
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: 288px;
+  height: 40px;
+  background: #ebf8ed;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.assortment-btn:hover,
+.assortment-btn:focus {
+  opacity: 0.5;
+  border: 1px solid #030a06;
+  color: #030a06;
+}
+
+.assortment-btn:active {
+  border: 1px solid #113916;
+  color: #113916;
+  opacity: 0.6;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .section-assortment {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .assortment-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .assortment-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .assortment-item-img {
+    width: 340px;
+  }
+
+  .assortment-btn {
+    width: 340px;
+  }
+
+  .assortment-btn-margin {
+    margin-top: 22px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .assortment-title {
+    font-size: 48px;
+  }
+
+  .assortment-list {
+    row-gap: 64px;
+  }
+
+  .assortment-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .assortment-btn {
+    width: 310px;
+  }
+
+  .assortment-btn8-margin {
+    margin-top: 22px;
+  }
+}

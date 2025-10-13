@@ -74,7 +74,13 @@ margin-bottom: 64px;
     flex-basis: calc((100% - 24px) / 2);
     display: flex;
     flex-direction: column; 
+    justify-content: flex-start;
+min-height: 100%;
   }
+  
+  .feedback-name {
+margin-top: auto;
+}
 
   .feedback-li {
     margin-bottom: 24px;
