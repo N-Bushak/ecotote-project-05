@@ -1,0 +1,220 @@
+.support-section {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.support-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.support-paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.support-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.support-label {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.support-input {
+
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 100%;
+    height: 42px;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-input::placeholder {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(3, 10, 6, 0.6);
+}
+
+.support-input:focus {
+    outline: none;
+    color: #030a06;
+}
+
+.support-input:not(:placeholder-shown):valid{
+    color: #030a06;
+}
+
+.support-input:not(:placeholder-shown):invalid{
+    border: 1px solid #d64040;
+    color: #d64040;
+}
+
+.support-text-invalid {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d64040;
+    display: none;
+    position: absolute;
+}
+
+.support-input:not(:placeholder-shown):invalid~.support-text-invalid {
+    display: block;
+}
+
+
+.support-textarea {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    height: 180px;
+    resize: none;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-textarea::placeholder {
+    font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(3, 10, 6, 0.6);
+}
+
+.support-textarea:focus {
+    outline: none;
+    color: #030a06;
+}
+
+
+.button-send {
+    background: #030a06;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    transition: background 0.3s ease, opacity 0.3s ease, border 0.3s ease;
+}
+
+.button-send:hover,
+.button-send:focus {
+    background: #030a06;
+    opacity: 0.5;
+}
+
+.button-send:active {
+    background: #113916;
+    border: 1px solid #113916;
+    opacity: 0.6;
+}
+
+.support-wrapper {
+    display: flex;
+    gap: 24px;
+   flex-wrap: wrap;
+}
+
+.background-image {
+    background-image: url('../img/mob-support-1x.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    height: 428px;
+    width: 100%;
+    background-position: center center;
+}
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/mob-support-2x.webp');
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+.support-section {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+.support-title {
+    max-width: 468px;
+}
+.button-send {
+    width: 249px;
+}
+.background-image {
+    background-image: url('../img/tab-support-1x.webp');
+    width: 704px;
+}
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/tab-support-2x.webp');
+    }
+}
+
+.support-input,
+.support-textarea,
+.support-form,
+.support-form-wrapper {
+    width: 100%;
+}
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+.support-title {
+    font-size: 48px;
+    width: 100%;
+}
+.support-form-wrapper {
+    width: 100%;
+}
+.button-send {
+    width: 198px;
+}
+.support-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.background-image {
+    background-image: url('../img/des-support-1x.webp');
+    width: 644px;
+    height: 767px;
+    margin-top: 0;
+}
+
+@media screen and (min-resolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        background-image: url('/img/des-support-2x.webp');
+    }
+
+}
+}
