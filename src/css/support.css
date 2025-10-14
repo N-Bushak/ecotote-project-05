@@ -1,6 +1,6 @@
 .support-section {
-    margin-bottom: 32px;
-    margin-top: 32px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .support-title {
@@ -156,8 +156,8 @@
 
 @media only screen and (min-width: 768px) {
 .support-section {
-    margin-bottom: 64px;
-    margin-top: 64px;
+    padding-bottom: 64px;
+    padding-top: 64px;
 }
 .support-title {
     max-width: 468px;
