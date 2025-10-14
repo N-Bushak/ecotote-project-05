@@ -1,20 +1,39 @@
 <section class="section-hero">
     <div class="hero container">
-        <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті.</h1>
-        <div class="hero-content">
-            <p class="hero-text">
-                Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та відповідальність разом з EcoTote.
-            </p>
-            <a class="hero-btn" href="#assortment"><span class="btn-text">Купити зараз</span></a>
+        <div class="hero-container-desc">
+            <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті.</h1>
+            <div class="hero-content">
+                <p class="hero-text">
+                    Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та відповідальність разом з EcoTote.
+                </p>
+                <a class="hero-btn" href="#assortment"><span class="btn-text">Купити зараз</span></a>
         </div>
-        <img 
-        class="hero-img" 
-        srcset="/img/mob-hero-1x.webp,
-        /img/mob-hero-2x.webp"
+        </div>
+        
+        <picture>
+            <source 
+            srcset="/img/mob-hero-1x.webp 1x, 
+            /img/mob-hero-2x.webp 2x"
+            media="(max-width: 767px)" type="image/webp"
+            />
 
-        src="/img/mob-hero-1x.webp" 
-        alt="Сумки-шопери стоять на лавці."
-        width="288"
-        height="285">
+            <source 
+            srcset="/img/tab-hero-1x.webp 1x, 
+            /img/tab-hero-2x.webp 2x"
+            media="(min-width: 768px) and (max-width: 1440px)" type="image/webp"
+            />
+
+            <source 
+            srcset="/img/des-hero-1x.webp 1x, 
+            /img/des-hero-2x.webp 2x"
+            media="(min-width:1440px)" type="image/webp"
+            />
+
+         <img 
+         class="hero-img"
+         src="/img/des-hero-1x.webp" 
+         alt="Сумки-шопери стоять на лавці."> 
+        </picture>
+
     </div>
 </section>
