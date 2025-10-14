@@ -1,0 +1,291 @@
+/* Styles for Mobile devices */
+
+.header,
+.container-logo-icon {
+    background-color: #75D281;
+    height: 64px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-logo-icon {
+    padding-left: 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logo-icon {
+    fill:#030A06;
+    
+}
+
+.header-list {
+    display: none;
+}
+
+.item-link:hover::after,
+.item-link:focus::after,
+.navbar-link:hover::after,
+.navbar--link:focus::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #030a06;
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.item-link:active,
+.navbar-link:active {
+    color: #3ac04c;
+}
+
+.item-link:disabled,
+.navbar-link:disabled {
+    color: gray;
+}
+
+.item-link:disabled::after,
+.navbar-link:disabled::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    color: gray;
+}
+
+.item-link:active::after,
+.navbar-link:active::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #3ac04c;
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.item-link,
+.navbar-link {
+    position: relative;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+.header-address {
+    display: none;
+}
+
+.header-address-link {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.menu-open-btn {
+    
+    background-color: transparent;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    line-height: 0;
+   
+}
+
+.menu-icons {
+    fill: #030A06; 
+}
+
+/* Navbar for Mobile devices */
+.navbar-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #75D281;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(0%);
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.navbar-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}
+
+.container-logo-icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-right: 12px;
+        padding-left: 20px;
+        height: 48px;
+        width: 100%;
+        margin-bottom: 32px;
+}
+
+.navbar-logo-icon{
+    fill: #030A06;
+}
+
+
+
+.navbar-btn-close {
+    margin-left: auto;
+    background-color: transparent;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    line-height: 0;}
+
+.btn-close-icons {
+        fill: #030A06;
+}
+
+
+.navbar-navigation{
+margin-bottom: 32px;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.navbar-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+
+.navbar-address-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+
+
+
+.navbar-address-navigation {
+    padding-top: 32px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    
+    .menu-icons {
+        width: 24px;
+        height: 24px;
+    }
+
+        /* Navbar for Tablet devices */
+    .container-logo-icon {
+        padding-left: 32px;
+    }
+    
+    .navbar-list {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .navbar-address-navigation {
+        padding-left: 32px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+    
+    .header-logo-icon {
+        width: 106px;
+        height: 45px;
+    }
+
+    .header-logo-link {
+        margin-right: 175px;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 32px;
+        margin-right: 175px;
+    }
+        
+        .header-address {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 16px;
+        }
+
+        .header-address-navigation {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            
+    
+        }
+           
+    .header-address-link {
+        font-style: normal;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #030a06;
+        
+    }
+
+    .menu-open-btn {
+            display: none;
+        }
+
+    .navbar-menu {
+        display: none;
+    }
+
+}
