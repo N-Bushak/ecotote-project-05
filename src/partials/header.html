@@ -1,32 +1,33 @@
 <header class="header">
     <div class="container header-container">
+        <a class="header-logo-link" href="../index.html">
+            <svg class="header-logo-icon" width="84" height="36">
+                <use href="/img/icons.svg#icon-company-logo"></use>
+            </svg>
+        </a>
         <nav class="header-navigation">
-<a class="header-logo-link" href="../index.html"> 
-    <svg class="header-logo-icon" width="84" height="36">
-        <use href="../img/icons.svg#icon-company-logo"></use>   
-    </svg>
-</a>
+
 
                     <!-- Desktop -->
                     
                         <ul class="header-list">
                             <li class="list-item">
-                                <a class="item-link current" href="#about">Про нас</a>
+                                <a class="item-link" href="#about">Про нас</a>
                             </li>
                             <li class="list-item">
-                                <a class="item-link current" href="#advantages">Переваги</a>
+                                <a class="item-link" href="#advantages">Переваги</a>
                             </li>
                             <li class="list-item">
-                                <a class="item-link current" href="#assortment">Асортимент</a>
+                                <a class="item-link" href="#assortment">Асортимент</a>
                             </li>
                             <li class="list-item">
-                                <a class="item-link current" href="#gallery">Галерея</a>
+                                <a class="item-link" href="#gallery">Галерея</a>
                             </li>
                             <li class="list-item">
-                                <a class="item-link current" href="#feedbacks">Відгуки</a>
+                                <a class="item-link" href="#feedbacks">Відгуки</a>
                             </li>
                             <li class="list-item">
-                                <a class="item-link current" href="">Контакти</a>
+                                <a class="item-link" href="#support">Контакти</a>
                             </li>
                         </ul>
 
@@ -43,26 +44,26 @@
                             </ul>
                         </address>
 
-<button class="menu-open-btn">
+<button class="menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
     <svg class="menu-icons" width="32" height="32">
-        <use href="../img/icons.svg#icon-menu">
+        <use href="/img/icons.svg#icon-menu">
         </use>
     </svg>
 </button>
 </div>
 
 <!-- Navbar open  -->
- <div class="navbar-menu">
+ <div class="navbar-menu js-menu-container" id="mobile-menu">
     <div class="container-logo-icon">
     <a class="navbar-logo-link" href="../index.html">
         <svg class="navbar-logo-icon" width="84" height="36">
-            <use href="../img/icons.svg#icon-company-logo"></use>
+            <use href="/img/icons.svg#icon-company-logo"></use>
         </svg>
     </a>
 
-    <button class="navbar-btn-close">
+    <button class="navbar-btn-close js-close-menu">
         <svg class="btn-close-icons" width="32" height="32">
-            <use href="../img/icons.svg#icon-x">
+            <use href="/img/icons.svg#icon-x">
             </use>
         </svg>
     </button>
@@ -106,27 +107,8 @@
             </li>
         </ul>
     </address>
-
-
 </div>
 
-
-
-
-
-
  </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </header>
