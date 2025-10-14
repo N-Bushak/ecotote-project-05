@@ -36,7 +36,7 @@
 .navbar--link:focus::after {
     content: '';
     display: block;
-    border-bottom: 2px solid #030a06;
+    border-bottom-color: #030a06;
     width: 100%;
     transform: scaleX(1);
     transition: transform 250ms ease-in-out;
@@ -80,7 +80,18 @@
     font-size: 16px;
     line-height: 1.6;
     color: #030a06;
+
 }
+
+.item-link::after,
+.navbar-link::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+    transition: border-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
 .header-address {
     display: none;
 }
