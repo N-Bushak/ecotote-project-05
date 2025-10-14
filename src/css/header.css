@@ -12,7 +12,6 @@
 
 .container-logo-icon {
     padding-left: 20px;
-    
 }
 
 .header-container {
@@ -86,19 +85,17 @@
     display: none;
 }
 
-.header-address-link {
+/* .header-address-link {
     padding-top: 23px;
     padding-bottom: 23px;
-}
+} */
 
 .menu-open-btn {
-    
     background-color: transparent;
     padding: 0;
     width: 48px;
     height: 48px;
-    line-height: 0;
-   
+    line-height: 0; 
 }
 
 .menu-icons {
@@ -141,16 +138,14 @@
         flex-direction: row;
         padding-right: 12px;
         padding-left: 20px;
-        height: 48px;
+        height: 64px;
         width: 100%;
-        margin-bottom: 32px;
+        /* margin-bottom: 32px; */
 }
 
 .navbar-logo-icon{
     fill: #030A06;
 }
-
-
 
 .navbar-btn-close {
     margin-left: auto;
@@ -158,7 +153,8 @@
     padding: 0;
     width: 48px;
     height: 48px;
-    line-height: 0;}
+    line-height: 0;
+}
 
 .btn-close-icons {
         fill: #030A06;
@@ -166,6 +162,7 @@
 
 
 .navbar-navigation{
+    margin-top: 32px;
 margin-bottom: 32px;
 }
 
@@ -227,6 +224,10 @@ margin-bottom: 32px;
     .navbar-address-navigation {
         padding-left: 32px;
     }
+
+    .mobile-container {
+        gap: 0;
+    }
 }
 
 /* Styles for Desktop devices */
@@ -237,9 +238,9 @@ margin-bottom: 32px;
         height: 45px;
     }
 
-    .header-logo-link {
+    /* .header-logo-link {
         margin-right: 175px;
-    }
+    } */
 
     .header-navigation {
         display: flex;
@@ -251,7 +252,7 @@ margin-bottom: 32px;
     .header-list {
         display: flex;
         gap: 32px;
-        margin-right: 175px;
+        /* margin-right: 175px; */
     }
         
         .header-address {
