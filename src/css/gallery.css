@@ -64,7 +64,7 @@ padding-top: 32px;
 /* === ДЕСКТОП === */
 @media (min-width: 1440px) {
   .gallery-box {
-    padding-top: 64px;
+    /* padding-top: 64px; */
     gap: 24px;
   }
 
@@ -113,9 +113,6 @@ padding-top: 32px;
   padding-bottom: 64px;
   padding-top: 64px;
   }
-  .gallery-title {
-  margin-bottom: 24px;
-  }
 
   .gallery-list {
     grid-template-columns: 340px 340px; 
@@ -154,7 +151,7 @@ padding-top: 32px;
   .gallery-list {
     grid-template-columns: repeat(3, 421px);
     grid-auto-rows: 421px;
-    gap: 24px;
+    /* gap: 24px; */
     justify-content: center;
   }
 
