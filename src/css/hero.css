@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.hero-container-desc {
+  margin-bottom: 24px;  
+}
+
 .hero-title {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
@@ -24,7 +28,6 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  margin-bottom: 24px;
 }
 
 .hero-text {
